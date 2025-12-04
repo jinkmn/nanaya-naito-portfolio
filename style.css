@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/* 基本設定：PC固定レイアウトのための設定 */
+body {
+  background-color: #ffffff; /* 阿部寛HP風の白背景 */
+  color: #000000;
+  font-family: "MS PGothic", "Osaka", Arial, sans-serif; /* レトロなフォント指定 */
+  margin: 0;
+  padding: 0;
+  min-width: 960px; /* PC固定幅 */
+}
+
+/* リンクの色設定（往年のWebサイト風） */
+a {
+  color: #0000cc;
+  text-decoration: underline;
+}
+a:visited {
+  color: #551a8b;
+}
+a:hover {
+  color: #ff0000;
+}
+
+/* レイアウトの枠組み */
+.container {
+  width: 960px;
+  margin: 0 auto; /* 中央寄せ */
+  display: flex;
+  align-items: flex-start;
+}
+
+/* 左側のサイドメニュー */
+.sidebar {
+  width: 180px;
+  padding: 20px 10px;
+  background-color: #f0f0f0; /* 薄いグレーでエリアを分ける */
+  text-align: center;
+  min-height: 100vh; /* 画面の高さ分確保 */
+  border-right: 1px solid #ccc;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* 右側のメインコンテンツ */
+.main-content {
+  width: 780px;
+  padding: 20px 30px;
+}
+
+/* 見出しのスタイル */
+h1 {
+  font-size: 24px;
+  border-left: 8px solid #000080; /* 阿部寛HP風のアクセント */
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  background-color: #e0e0e0;
+  padding: 5px;
+  margin-top: 30px;
+}
+
+/* プロフィール画像 */
+.profile-img {
+  max-width: 200px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* テーブルスタイル（プロフィール用） */
+table.profile-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+table.profile-table th,
+table.profile-table td {
+  border: 1px solid #999;
+  padding: 8px;
+  text-align: left;
+}
+
+table.profile-table th {
+  background-color: #f9f9f9;
+  width: 30%;
+}
+
+/* 作品・写真エリア */
+.item-box {
+  margin-bottom: 30px;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 20px;
+}
+
+.item-img {
+  max-width: 300px;
+  display: block;
+  margin: 10px 0;
+  border: 1px solid #000;
+}
+
+/* 連絡先エリア */
+.contact-info {
+  border: 2px solid #000080;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: #fcfcfc;
+}
