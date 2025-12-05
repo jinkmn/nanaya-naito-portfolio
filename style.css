@@ -2,7 +2,7 @@
 
 /* 基本設定：PC固定レイアウトのための設定 */
 body {
-  background-color: #ffffff; /* 阿部寛HP風の白背景 */
+  background-color: #ffffff;
   color: #000000;
   font-family: "MS PGothic", "Osaka", Arial, sans-serif; /* レトロなフォント指定 */
   margin: 0;
